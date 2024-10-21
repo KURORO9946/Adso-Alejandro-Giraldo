@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuromi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            transition: all 0.2s ease-in;
+        }
+        body {
+            background-image: url('https://wallpapers.com/images/high/kuromi-background-1sy81o2a4obd2iu6.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            padding: 1rem;
+        }
+        nav svg {
+            width: 24px;
+            height: 24px;
+        }
+        main {
+            background-color: rgba(116, 33, 109, 0.7);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 850px;
+            margin: 2rem auto;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        main header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #f1e1ff;
+        }
+        figure figcaption {
+            text-align: center;
+            color: black;
+            font-size: x-large;
+            font-weight: bold;
+            background-color: #fff9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .image-grid figure {
+            background: rgba(169, 85, 150, 0.8);
+            height: 200px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .image-grid figure img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .description {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 10px;
+            transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+        .image-grid figure:hover .description {
+            top: 0;
+            opacity: 1;
+        }
+        article {
+            background-color: rgba(101, 0, 121, 0.8);
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 850px;
+            margin: 2rem auto;
+            padding: 1rem;
+            color: white;
+            border-radius: 10px;
+        }
+        article .img img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        article .txt {
+            flex: 1;
+        }
+        .music {
+            display: none;
+        }
+        @media (min-width: 1200px) {
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1rem;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 1199px) {
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .image-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="#fff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header>
+            <h1>39-challenge-responsive</h1>
+            <h2>solved</h2>
+        </header>
+        <div class="image-grid">
+            <figure>
+                <img src="images/Kuromi.2.jpg" alt="Kuromi">
+                <figcaption>Kuromi</figcaption>
+                <div class="description">Kuromi es traviesa y energética, con un estilo punk-gótico.</div>
+            </figure>
+            <figure>
+                <img src="images/cinamon.jpg" alt="Cinnamoroll">
+                <figcaption>Cinnamoroll</figcaption>
+                <div class="description">Cinnamoroll es tierno, con orejas largas y esponjosas.</div>
+            </figure>
+            <figure>
+                <img src="images/lloromannic.jpg" alt="Lloromannic">
+                <figcaption>Lloromannic</figcaption>
+                <div class="description">Lloromannic es misterioso y adorable.</div>
+            </figure>
+            <figure>
+                <img src="images/mymelody.jpg" alt="My Melody">
+                <figcaption>My Melody</figcaption>
+                <div class="description">My Melody es dulce y generosa, siempre dispuesta a ayudar.</div>
+            </figure>
+        </div>
+    </main>
+    <article>
+        <div class="img">
+            <img src="images/Kuromi.2.jpg" alt="Kuromi">
+        </div>
+        <div class="txt">
+            <h2>Kuromi</h2>
+            <p>Kuromi es un personaje de la franquicia Sanrio, rival de My Melody. Con su estilo punk-gótico y un gorro negro adornado con una calavera, se muestra traviesa y rebelde, pero no malvada. A pesar de su apariencia, Kuromi es divertida y tiene una personalidad enérgica y juguetona, lo que la hace muy popular entre los fanáticos del estilo kawaii con un toque oscuro.</p>
+            <p>Es audaz, ingeniosa y siempre está buscando nuevas aventuras, lo que la convierte en una favorita entre aquellos que buscan algo atrevido pero entrañable en el universo de Sanrio.</p>
+        </div>
+    </article>
+    
+    <article>
+        <div class="img">
+            <img src="images/cinamon.jpg" alt="Cinnamoroll">
+        </div>
+        <div class="txt">
+            <h2>Cinnamoroll</h2>
+            <p>Cinnamoroll es un tierno cachorro con orejas largas y suaves, capaz de volar brevemente gracias a ellas. De carácter dulce y amistoso, es uno de los personajes más adorables de Sanrio. Su pelaje blanco y esponjoso junto con su nariz de canela le dan un aspecto cálido y acogedor.</p>
+            <p>A menudo es visto descansando en el café de su dueño, donde disfruta de la compañía de sus amigos y del cielo, su lugar favorito. Cinnamoroll representa la bondad y la ternura, ideales del universo kawaii.</p>
+        </div>
+    </article>
+    
+    <article>
+        <div class="img">
+            <img src="images/lloromannic.jpg" alt="Lloromannic">
+        </div>
+        <div class="txt">
+            <h2>Lloromannic</h2>
+            <p>Lloromannic es un personaje más reciente en el universo de Sanrio, con una estética melancólica y ligeramente oscura. A menudo representado con lágrimas en sus ojos, Lloromannic es un personaje que se destaca entre las demás figuras por su profundidad emocional, apelando a los seguidores de Sanrio que buscan algo más introspectivo.</p>
+            <p>Con su aire triste y su apariencia distintiva, Lloromannic ofrece una representación de emociones ocultas detrás de una fachada tranquila, lo que atrae a aquellos que prefieren una estética más reflexiva.</p>
+        </div>
+    </article>
+
+    <article>
+        <div class="img">
+            <img src="images/mymelody.jpg" alt="My Melody">
+        </div>
+        <div class="txt">
+            <h2>My Melody</h2>
+            <p>My Melody es una coneja blanca muy conocida por su gorro rojo, regalo de su abuela. Es una de las figuras más icónicas del mundo de Sanrio, con una personalidad amable, optimista y generosa. Siempre está dispuesta a ayudar a sus amigos, especialmente a su inseparable amiga Kuromi, aunque ambas a menudo parecen rivales.</p>
+            <p>Su pureza y su actitud positiva frente a las adversidades han ganado el corazón de muchos, convirtiéndola en un símbolo del encanto kawaii clásico que representa la inocencia y el amor.</p>
+        </div>
+    </article>
+
+    <audio class="music" autoplay>
+        <source src="images/kuromi-song.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
