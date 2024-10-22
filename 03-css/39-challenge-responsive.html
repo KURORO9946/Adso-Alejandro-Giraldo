@@ -142,15 +142,25 @@
         }
 
         @media (max-width: 600px) {
-    .img {
-        display: block; 
-        margin: 0 auto; 
-    }
-    .txt {
-        display: block; 
-        margin-top: 10px;
-    }
-
+            article {
+                flex-direction: column; 
+                align-items: center; 
+            }
+            article .img {
+                width: 100%; 
+                display: flex; 
+                justify-content: center; 
+            }
+            article .img img {
+                width: 100%; 
+                height: auto; 
+                max-width: 300px; 
+            }
+            article .txt {
+                margin-top: 10px; 
+                text-align: center; 
+            }
+        }
 
         
     </style>
