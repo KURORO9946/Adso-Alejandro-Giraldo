@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45-challenger-grid</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh
+}
+
+div.dos{
+    display: grid;
+  place-items: center;
+  margin: 2rem auto;
+    grid-template-areas: 
+      "img07 img08 img09"
+      "img10 img08 img11"
+      "img12 img12 img13";
+
+      width: calc(140px * 3);
+      height: cacl(140px * 3);
+      gap: 8px;
+}
+div.uno {
+  display: grid;
+  place-items: center;
+/*   
+  grid-template-columns: repeat(4, 140px);
+  grid-template-rows: repeat(3, 140px);
+  */
+  grid-template-areas: 
+      
+      "img01 img01 img04 img06"
+      "img01 img01 img05 img05"
+      "img02 img03 img05 img05";
+  margin: 2rem auto;
+  width: calc(140px * 4);
+  height: cacl(140px *3);
+  gap: 8px;
+}
+
+div img {
+  border-radius: 4px;
+  outline: solid #000;
+  object-fit: cover;
+  height: 140px;
+  width: 140px;
+}
+
+img.img01 {
+  grid-area: img01;
+  height: calc(140px * 2 + 8px);
+  width: calc(140px *2 + 8px);
+}
+img.img02 {
+  grid-area: img02;
+}
+img.img03 {
+  grid-area: img03;
+}
+img.img04 {
+  grid-area: img04;
+}
+img.img05 {
+  grid-area: img04;
+}
+img.img06 {
+  grid-area: img05;
+  width: calc(140px *2 + 8px);
+  height: calc(140px *2 + 8px);
+}
+img.img08 {
+    grid-area: img07;
+}
+div.dos img.img09{
+    grid-area: img08;
+    height: calc(140px * 2 + 8px);
+}
+
+img.img10{
+    grid-area: img09;
+}
+img.img11{
+    grid-area: img10;
+}
+img.img12{
+    grid-area: img11;
+}
+
+div.dos img.img13{
+    grid-area:img12;
+    width: calc(140px * 2 + 8px)
+}
+img.img14{
+    grid-area: img13;
+}
+    </style>
+</head>
+
+<body class="css">
+    <nav>
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#ffffff"
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg></a>
+    </nav>
+    <div class="dos">
+        <img src="images/volibear.jpg" class="img08">
+        <img src="images/sett.jpg" class="img09">
+        <img src="images/blitzcrank.jpg" class="img10">
+        <img src="images/teemo.jpg" class="img11">
+        <img src="images/mordekaiser.jpg" class="img12">
+        <img src="images/garen.jpg" class="img13">
+        <img src="images/trundle.jpg" class="img14">
+    </div>
+    <div class="uno">
+        <img src="images/volibear.jpg" class="img01">
+        <img src="images/trundle.jpg" class="img02">
+        <img src="images/mordekaiser.jpg" class="img03">
+        <img src="images/teemo.jpg" class="img04">
+        <img src="images/garen.jpg" class="img05">
+        <img src="images/sett.jpg" class="img06">
+        <img src="images/blitzcrank.jpg" class="img07">
+      </div>
+
+</body>
+
+</html>
